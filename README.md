@@ -1,5 +1,7 @@
 # eagle-tagmap-toolkit
 
+**English** | [简体中文](README.zh-CN.md)
+
 Companion toolkit for the Eagle plugin **[Danbooru Tag Assassin](https://community-tw.eagle.cool/plugin/3c1b20c4-4e23-4474-b0d5-34361ab156ad)**
 — Simplified-Chinese UI, pinyin-aware tag search, and a mapping layer that teaches
 auto-tagging to write *your own* library tags instead of raw Danbooru English tags.
