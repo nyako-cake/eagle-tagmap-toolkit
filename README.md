@@ -77,6 +77,17 @@ Re-open the plugin window afterwards (or press 重新载入).
 * an empty value (`""`) means **disable** that mapping — keep the English tag
 * the manual layer always wins over the automatic one
 
+## Dependencies (all installed separately, none bundled here)
+
+| Component | Where it comes from | Licence |
+|---|---|---|
+| **Danbooru Tag Assassin** (the Eagle plugin) | Eagle community plugin page | not stated — treat as *all rights reserved*, patch your own copy only |
+| **corkborg/wd14-tagger-standalone** (Python/ONNX CLI that actually runs the model) | https://github.com/corkborg/wd14-tagger-standalone | not stated on the repo — get it from upstream, don't repackage it |
+| **SmilingWolf/wd-swinv2-tagger-v3** (ONNX weights + tag list) | HuggingFace model repo | see the model card before redistributing |
+
+The plugin's auto-tag panel asks for the **tagger folder path** (`…/wd14-tagger-standalone`);
+the weights are downloaded into the HuggingFace cache on first run.
+
 ## Notes / limits
 
 * English tag → one local tag; no one-to-many.

@@ -73,6 +73,17 @@ python tools/mapping_tool.py --plugin "$PLUGIN" --list
 - 值为空字符串（`""`）表示**停用**该条映射，保留英文
 - 手写映射永远优先于自动映射
 
+## 依赖（全部需自行安装，本仓库一概不打包）
+
+| 组件 | 来源 | 许可 |
+|---|---|---|
+| **Danbooru Tag Assassin**（Eagle 插件本体） | Eagle 社区插件页 | 未声明 —— 按「保留所有权利」对待，只能给自己已安装的副本打补丁 |
+| **corkborg/wd14-tagger-standalone**（真正跑模型的 Python/ONNX CLI） | https://github.com/corkborg/wd14-tagger-standalone | 仓库未声明许可 —— 请从上游获取，不要二次打包 |
+| **SmilingWolf/wd-swinv2-tagger-v3**（ONNX 权重 + 标签表） | HuggingFace 模型仓库 | 分发前请看模型卡上的许可 |
+
+插件的自动打标面板里填的「Tagger 路径」就是 `…/wd14-tagger-standalone` 这个目录；
+模型权重首次运行时会自动下载到 HuggingFace 缓存目录。
+
 ## 注意 / 限制
 
 - 一个英文 tag 只能映射到一个本地标签，不支持一变多
