@@ -1,0 +1,16 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# generated / local
+candidates.csv
+*.bak
+local-tag-map.json
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
