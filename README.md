@@ -31,6 +31,8 @@ model output ──► english tag ──► [mapping layer] ──► your tag 
 | `tools/build_pinyin.py` | generate `data/pinyin.json` (Han → toneless pinyin) so the tag search accepts `baifa` / `bai fa` / `bf` |
 | `tools/gen_candidates.py` | offline fuzzy match → reviewable CSV of `english tag → your label` candidates |
 | `tools/mapping_tool.py` | edit / import the plugin's `data/local-tag-map.json` from the CLI |
+| `assets/pinyin.json` | prebuilt pinyin table (3,633 chars), copy it if you don't want to run pypinyin |
+| `examples/local-tag-map.example.json` | sample mapping file, safe to copy into your plugin |
 | `docs/features.md` | every code change that was made, with anchors, so you can apply it yourself |
 
 ## Quick start

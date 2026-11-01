@@ -1,0 +1,15 @@
+{
+  "_comment": "示例：英文 Danbooru tag -> 你自己的标签。空字符串表示停用该条映射（保留英文）。",
+  "_note": "keys 大小写不敏感，下划线与空格等价；手写映射优先于自动映射。",
+  "white hair": "白发",
+  "black hair": "黑发",
+  "long hair": "长发",
+  "twintails": "双马尾",
+  "green eyes": "绿目",
+  "red eyes": "赤目",
+  "thighhighs": "过膝袜",
+  "pantyhose": "连裤袜",
+  "school uniform": "制服",
+  "ganyu (genshin impact)": "角色_甘雨（原神）",
+  "smile": ""
+}
