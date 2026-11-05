@@ -1,7 +1,26 @@
 # v1.0.0 — 首个公开发布
 
 给 Eagle 插件 **Danbooru Tag Assassin** 做的整套改造汇总。
-插件本体是第三方作品（作者 KiraraCape-変色君），本仓库不包含其源码，只包含原创脚本、生成的数据与文档。
+插件本体是第三方作品（作者 KiraraCape-変色君）；整合包经原作者授权发布。
+
+---
+
+## 下载
+
+| 附件 | 大小 | 说明 |
+|---|---|---|
+| `DanbooruTagAssassin-1.1.2-zhCN.eagleplugin` | 2.3 MB | **整合包**，双击即可装进 Eagle。已包含简体界面、拼音搜索、标签映射、改名同步等全部改动 |
+| `pinyin.json` | 43 KB | 拼音表（3,633 字），不打整合包时手动放进 `data/` |
+| `local-tag-map.example.json` | 549 B | 映射示例，可直接改成你自己的 |
+
+**整合包说明**
+
+- 基于原作者 v1.1.2，作者：KiraraCape-変色君，出处：
+  <https://community-tw.eagle.cool/plugin/3c1b20c4-4e23-4474-b0d5-34361ab156ad>
+- **不含任何个人数据**：已剔除 `custom-tags-*.json`、`window-state.json`，
+  `data/local-tag-map.json` 只保留 6 条示例；`config-female.json` 用的是默认值
+- 装好后第一次打开打标面板，Tagger 路径需要指向你自己的 `wd14-tagger-standalone` 目录
+- 覆盖安装前请先备份你自己现有的 `data/local-tag-map.json` 和 `data/custom-tags-*.json`
 
 ---
 
